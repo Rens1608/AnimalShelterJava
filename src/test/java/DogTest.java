@@ -1,4 +1,3 @@
-import Animals.Cat;
 import Animals.Dog;
 import Animals.Gender;
 import org.junit.jupiter.api.Assertions;
@@ -21,7 +20,7 @@ public class DogTest {
         Assertions.assertEquals("Sgt. Woof", dog.Name);
         Assertions.assertEquals(Gender.Male, dog.Gender);
         Assertions.assertNull(dog.ReservedBy);
-        Assertions.assertEquals(LocalDateTime.now(), dog.LastWalk);
+        Assertions.assertEquals(LocalDateTime.now().getDayOfMonth() , dog.LastWalk);
         Assertions.assertFalse(dog.NeedsWalk());
     }
 

@@ -18,7 +18,7 @@ public class CatTest {
     public void testConstructor(){
         Assertions.assertEquals("Ms. Meow", cat.Name);
         Assertions.assertEquals(Gender.Female, cat.Gender);
-        Assertions.assertEquals("Scrathes couch", cat.BadHabits);
+        Assertions.assertEquals("Scratches couch", cat.BadHabits);
         Assertions.assertNull(cat.ReservedBy);
     }
 
