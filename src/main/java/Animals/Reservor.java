@@ -1,15 +1,16 @@
 package Animals;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Reservor {
     public String Name;
-    public Date ReservedAt;
+    public LocalDateTime ReservedAt;
 
     public Reservor() {
     }
 
-    public Reservor(String name, Date reservedAt) {
+    public Reservor(String name, LocalDateTime reservedAt) {
         Name = name;
         ReservedAt = reservedAt;
     }
@@ -22,11 +23,11 @@ public class Reservor {
         Name = name;
     }
 
-    public Date getReservedAt() {
+    public LocalDateTime getReservedAt() {
         return ReservedAt;
     }
 
-    public void setReservedAt(Date reservedAt) {
+    public void setReservedAt(LocalDateTime reservedAt) {
         ReservedAt = reservedAt;
     }
 }

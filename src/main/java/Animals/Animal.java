@@ -1,5 +1,6 @@
 package Animals;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Animal {
@@ -38,7 +39,7 @@ public class Animal {
 
     public boolean Reserve(String reservedBy){
         if(ReservedBy == null){
-            Date date = new Date();
+            LocalDateTime date = LocalDateTime.now();
             ReservedBy = new Reservor(reservedBy, date);
             return true;
         }
